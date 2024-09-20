@@ -1,0 +1,22 @@
+/**
+* aggiungete i colori che preferite nella root.
+* se avete bisogno di un color picker andate qui 
+* https://www.w3schools.com/colors/colors_picker.asp
+* usate w3school anche per html e css
+*/
+:root {
+      --text: #000;
+      --background: #eaeaea;
+      --background-secondary: #aaaaaa;
+}
+/**
+* qui se l'utente è in dark mode.
+* 🦇
+*/
+@media(prefers-color-scheme: dark ){
+      :root {
+            --text: #dfdfdf;
+            --background: #2a2a2a;
+            --background-secondary: #323232;
+      }
+}
