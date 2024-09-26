@@ -6,7 +6,7 @@
 */
 :root {
       --text: #1c1c1c;
-      --primary-color: #512aa1;
+      --primary-color: #58b37b;
       --background: #eaeaea;
       --background-secondary: #aaaaaa;
       --font: "Gill Sans", sans-serif;
@@ -18,7 +18,7 @@
 @media(prefers-color-scheme: dark ){
       :root {
             --text: #dfdfdf;
-            --primary-color: #6e30bf;
+            --primary-color: #5bce78;
             --background: #2a2a2a;
             --background-secondary: #323232;
       }
