@@ -2,18 +2,19 @@
 <html lang="en">
 <head>
       <meta charset="UTF-8">
+      <meta name="darkreader-lock">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>[nome dell'app]</title>
+      <title>arcana walkings</title>
       <link rel="icon" type="image/x-icon" href="assets/favicon.svg">
       <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
       <div id="header-container">
             <div id="main-title" class="title">
-                  [TITOLO]
+                  tale on tour
             </div>
             <div id="slogan" class="subtitle">
-                  [catch phrase]
+                  guarda la tua città in un nuovo modo
             </div>
             <div id="buttons" class="tr">
                   <button 
@@ -30,9 +31,13 @@
                   </button>
             </div>
       </div>
+
       <div id="description" class="subtitle">
-            "[breve descrizione] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            "Questa arcana applicazione, con la sua imperscrutabile capacità di rivelare la mia città sotto un'orribile luce nuova e sconvolgente, incarna un fascino oscuro e irresistibile, come se svelasse segreti che avrei preferito ignorare."
+            <br>
+            H.P. Lovecraft
       </div>
+      <img src="assets/favicon.svg" width="200" height="240" id="logo">
 
       <div id="assignments">
             <div id="assignments-title" class="paragraph-title">consegne</div>
@@ -46,23 +51,23 @@
                   <circle cx="50" cy="1033.5" r="24" style="fill:var(--background); stroke:var(--primary-color); stroke-width: 12;"/>
             </svg> 
 
-            <div class="subtitle card">
+            <div class="subtitle card right">
                   needfinding
             </div>
-            <div class="subtitle card">
-                  revisione e focalizzazione
+            <div class="subtitle card left">
+                  <img src="./assets/lock.svg" class="icon" width="60" height="60">
             </div>
-            <div class="subtitle card">
-                  Prototipo low-fidelity
+            <div class="subtitle card right">
+                  <img src="./assets/lock.svg" class="icon" width="60" height="60">
             </div>
-            <div class="subtitle card">
-                  Raffinamento e prototipo medium-fidelity
+            <div class="subtitle card left">
+                  <img src="./assets/lock.svg" class="icon" width="60" height="60">
             </div>
-            <div class="subtitle card">
-                  Valutazione euristica
+            <div class="subtitle card right">
+                  <img src="./assets/lock.svg" class="icon" width="60" height="60">
             </div>
-            <div class="subtitle card">
-                  Prototipo e report finali
+            <div class="subtitle card left">
+                  <img src="./assets/lock.svg" class="icon" width="60" height="60">
             </div>
       </div>
       <div id="footer">
@@ -107,6 +112,9 @@
             </div>
       </div>
       <style>
+            #logo {
+                  margin-left: calc( 50% - 120px);
+            }
             #header-container {
                   padding-top: 30px;
                   width: 100%;
@@ -120,16 +128,22 @@
                   text-align: center;
             }
             #main-title {
+                  position: relative;
+                  top: 40px;
                   height: 40px;
+                  font-size: 60px;
+                  /*text-shadow: 4px 2px var(--text-shadow), -3px -2px var(--text-light);*/
             }
             #slogan {
                   height: 20px;
                   padding-top: 100px;
+                  position: relative;
             }
             #buttons {
                   width: calc( 100% - (100% - 420px)/2);
                   padding-top: 50px;
                   margin-left: calc( (100% - 420px)/2 );
+                  position: relative;
             }
             #description {
                   font-style: italic;
@@ -148,7 +162,7 @@
             }
             #roadmap {
                   position: absolute;
-                  left: 50px;
+                  left: calc( 50% - 50px );
             }
             #footer {
                   height: 400px;
@@ -226,6 +240,17 @@
                   padding-top: 50px;
                   box-sizing: border-box;
             }
+            .card {
+                  left: 0;
+                  width: calc( 50% - 50px );
+                  min-width: calc( 50% - 50px );
+            }
+            .left {
+                  margin-left: calc( 50% + 40px );
+            }
+            .right {
+                  margin-left: 10px;
+            }
             .contact-row {
                   padding-top: 50px;
             }
@@ -253,6 +278,21 @@
                         padding-top: 5px;
                         display: block;
                   }
+                  #roadmap {
+                        left: 50px;
+                  }
+                  .card {
+                        width: calc( 100% - 260px );
+                        min-width: 200px;
+                        position: relative;
+                        left: 150px;
+                        margin-left: 0;
+                  }
+            }
+            @media (max-width: 498px ) {
+                  #main-title {
+                        top: 10px;
+                  }
             }
       </style>
       <script type="text/javascript">
@@ -263,14 +303,14 @@
             const showErrorMsg = (msg)=>{
                   console.error(msg);
                   document.getElementById("err-msg").innerHTML = msg;
-                  document.getElementById("error-modal").style.display="block";
+                  document.getElementById("error-modal").style.display = "block";
             }
             /**
              * This function close the modal that was opened with showErrorMsg
              * @return {void}
              */
             const hideErrorMsg = ()=>{
-                  document.getElementById("error-modal").style.display="none";
+                  document.getElementById("error-modal").style.display = "none";
             }
       </script>
 </body>

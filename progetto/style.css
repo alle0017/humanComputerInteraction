@@ -5,24 +5,15 @@
 * usate w3school anche per html e css
 */
 :root {
+      --text-shadow: #00bf5f;
+      --text-light: #56ffaa;
       --text: #1c1c1c;
       --primary-color: #58b37b;
       --background: #eaeaea;
       --background-secondary: #aaaaaa;
       --font: "Gill Sans", sans-serif;
 }
-/**
-* qui se l'utente è in dark mode.
-* 🦇
-*/
-@media(prefers-color-scheme: dark ){
-      :root {
-            --text: #dfdfdf;
-            --primary-color: #5bce78;
-            --background: #2a2a2a;
-            --background-secondary: #323232;
-      }
-}
+
 
 .tr {
       display: flex;
@@ -50,6 +41,10 @@
 }
 .subtitle {
       font-size: 22px;
+}
+
+.icon {
+      filter: none;
 }
 
 * {
@@ -84,6 +79,21 @@ button:active {
       filter: brightness(30%);
 }
 
+/**
+* qui se l'utente è in dark mode.
+* 🦇
+*/
+@media(prefers-color-scheme: dark ){
+      :root {
+            --text: #dfdfdf;
+            --primary-color: #5bce78;
+            --background: #2a2a2a;
+            --background-secondary: #323232;
+      }
+      .icon {
+            filter: invert(100%);
+      }
+}
 @media (max-width: 415px ) {
       button {
             font-size: 16px;
