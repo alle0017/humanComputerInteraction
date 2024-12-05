@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="darkreader-lock">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>tales on tour</title>
+      <link rel="icon" type="image/x-icon" href="assets/icon.svg">
+      <link rel="stylesheet" href="./style.css"/>
+</head>
+<body> 
+      <div id="header-container">
+            <div id="main-title" class="title">
+                  tale on tour
+            </div>
+            <img src="assets/icon.svg" width="200" height="240" id="logo">
+            <div id="slogan" class="subtitle">
+                  La storia non si scrive da fermi: cammina verso la tua
+            </div>
+            <!--<div id="buttons" class="tr">
+                  <button 
+                        class="td-wrap special-btn" 
+                        title="prova la nostra app!" 
+                        onclick="showErrorMsg(`l'app non è ancora disponibile!`)">
+                        prova la demo
+                  </button>
+                  <button 
+                        class="td-wrap special-btn long-btn" 
+                        title="scarica la presentazione finale!"
+                        onclick="showErrorMsg(`la presentazione finale non è ancora stata fatta!`)">
+                        presentazione finale
+                  </button>
+            </div>-->
+      </div>
+
+      <div id="description" class="subtitle">
+            <b style="color: var(--primary-color)">Tale on Tour</b> rappresenta una soluzione innovativa che unisce il piacere del movimento a quello della narrazione. Esplora i migliori percorsi accompagnato da storie avvincenti, divertiti con i tuoi amici risolvendo misteri intriganti e rendi unica la tua passeggiata, personalizzando il percorso secondo i tuoi desideri!
+            <!--"Questa arcana applicazione, con la sua imperscrutabile capacità di rivelare la mia città sotto un'orribile luce nuova e sconvolgente, incarna un fascino oscuro e irresistibile, come se svelasse segreti che avrei preferito ignorare."
+            <br>
+            H.P. Lovecraft-->
+      </div>
+
+      <div id="assignments">
+            <div id="assignments-title" class="paragraph-title">consegne</div>
+            <svg id="roadmap" height="1600" width="100" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="50" y1="10" x2="50" y2="1553" style="stroke:var(--primary-color);stroke-width:12"/>
+                  <circle cx="50" cy="33.5" r="24" style="fill:var(--primary-color); stroke:var(--primary-color); stroke-width: 12;"/>
+                  <circle cx="50" cy="333.5" r="24" style="fill:var(--primary-color); stroke:var(--primary-color); stroke-width: 12;"/>
+                  <circle cx="50" cy="633.5" r="24" style="fill:var(--primary-color); stroke:var(--primary-color); stroke-width: 12;"/>
+                  <circle cx="50" cy="933.5" r="24" style="fill:var(--background); stroke:var(--primary-color); stroke-width: 12;"/>
+                  <circle cx="50" cy="1233.5" r="24" style="fill:var(--background); stroke:var(--primary-color); stroke-width: 12;"/>
+                  <circle cx="50" cy="1533.5" r="24" style="fill:var(--background); stroke:var(--primary-color); stroke-width: 12;"/>
+            </svg> 
+
+            <div class="subtitle card right">
+                  <a href="#needfinding" class="story-anchor"> needfinding </a>
+                  <a href="./pdf/NEEDFINDING - FIGMA MATES.pdf" class="download-btn" download> presentazione </a>
+            </div>
+            <div class="subtitle card left">
+                  <a href="#needfinding-e-refinement" class="story-anchor"> refinement </a>
+                  <a href="./pdf/NEEDFINDING & REFINEMENT - FIGMA MATES.pdf" class="download-btn" download> presentazione </a>
+            </div>
+            <div class="subtitle card right">
+                  <a href="#prototipi-lf" class="story-anchor"> task </a>
+                  <a href="./pdf/TASK, STORYBOARD E PROTOTIPI - FIGMA MATES.pdf" class="download-btn" download> presentazione </a>
+            </div>
+            <div class="subtitle card left">
+                  <img src="./assets/lock.svg" class="icon" width="60" height="60">
+            </div>
+            <div class="subtitle card right">
+                  <img src="./assets/lock.svg" class="icon" width="60" height="60">
+            </div>
+            <div class="subtitle card left">
+                  <img src="./assets/lock.svg" class="icon" width="60" height="60">
+            </div>
+      </div>
+      <div class="paragraph">
+            <div id="needfinding" class="paragraph-title center">
+                  needfinding
+            </div>
+            In questa prima fase ci siamo occupati di ricerare un tema caldo nell'ambito dell'urban health. 
+            Tra quelli che abbiamo analizzato,ce ne sono saltati all'occhio 2:
+            <ul>
+                  <li> <b style="color: var(--primary-color)">Eventi</b>: un'app che si sarebbe occupata di sponsorizzare eventi nella zona, promuovendo le interazioni sociali </li>
+                  <li> <b style="color: var(--primary-color)">Camminate</b>: un'app che si poneva come obbiettivo la "risoluzione" del problema della sedentarietà, promuovendo <br> dei percorsi resi interattivi attraverso delle storie fantasy</li>
+            </ul>
+
+            Tra queste  due abbiamo optato per l'app di camminata, in quanto, dalle analisi preliminari fatte, è emersa essere quella meno esplorata.
+            Da qui abbiamo svolto le interviste, sia online che dal vivo. Ciò ci ha fruttato:<br>
+            <span style="display: flex; justify-content: center; gap: 20%;">
+                  <div  style="display: flex; flex-direction: column; justify-content: center;">
+                        <span style="color: var(--primary-color); font-size: 80px; font-weight: bolder; position: relative; top: 10px">
+                              200+
+                        </span> 
+                        <span style="font-size: 24px;">
+                              risposte al 
+                              <a href="https://forms.gle/BNvBU55XABPrrLEq9">form</a> 
+                        </span>
+                  </div>
+                  <div style="display: flex; flex-direction: column; justify-content: center; align-content: space-between;">
+                        <span style="color: var(--primary-color); font-size: 80px; font-weight: bolder; position: relative; top: 10px; text-align: center;">
+                              20+
+                        </span> 
+                        <span style="font-size: 24px; text-align: center;">
+                              interviste dal vivo
+                        </span>
+                  </div>
+            </span>
+      </div>
+      <div class="paragraph">
+            <div id="needfinding-e-refinement" class="paragraph-title center">
+                  needfinding e refinement
+            </div>
+            In questa seconda consegna abbiamo analizzato i competitor, cercato i bisogni degli utenti finali e creato le personas. I bisogni trovati sono stati:
+            <br>
+            <br>
+            <span style="display: flex; justify-content: center; gap: 10%; text-transform: uppercase;">
+                        <span style="color: var(--primary-color); font-size: 40px; font-weight: bolder;">
+                              Socializzazione
+                        </span> 
+                        <span style="color: var(--primary-color); font-size: 40px; font-weight: bolder;">
+                              Stimoli ad uscire
+                        </span> 
+
+            </span>
+            <br>
+            <br>
+            Tra i vari competitor abbiamo deciso di analizzare con particolare attenzione quelli che 
+            hanno sviluppato app con gamification, in quanto maggiormente si adattavano alla nostra idea iniziale e ai
+            bisogni identificati. In particolare, abbiamo analizzato:
+            <ul>
+                  <li> 
+                        <b style="color: var(--primary-color)">
+                              Pokemon Go
+                        </b>: 
+                        un esempio di gioco che sfrutta la realtà aumentata
+                  </li>
+                  <li> 
+                        <b style="color: var(--primary-color)">
+                              WeWard
+                        </b>: 
+                        come app che sfrutta la gamification per far uscire i suoi utenti
+                  </li>
+                  <li> 
+                        <b style="color: var(--primary-color)">
+                              Head-Up Games
+                        </b>: 
+                        come modo di far ineragire l'utente con la tecnologia in modo innovativo
+                  </li>
+            </ul>
+      </div>
+      <div class="paragraph">
+            <div id="prototipi-lf" class="paragraph-title center">
+                  prototipi low-fidelity
+            </div>
+
+            Questa fase della progettazione ha rappresentato la divisione dell'app in diversi task specializzati.
+            Tra questi abbiamo identificato:
+            <ul>
+                  <li>Trovare il percorso più adatto alle esigenze dell'utente</li>
+                  <li>Trovare la storia più adeguata in base ai gusti degli utenti</li>
+                  <li>Trovare delle motivazioni/obbiettivi da dare agli utenti per spingerli ad uscire</li>
+            </ul>
+
+            Una volta identificati i task ci siamo occupati della scelta delle piattaforme di cui occuparci. In base alle 
+            nostre analisi abbiamo deciso di concentrarci maggiormente su telefono e smartwatch, per cercare di capire quale 
+            dei due dispositivi potesse essere una buona piattaforma (standalone). La realizzazione dei prototipi low-fidelity 
+            si è concentrata nel cercare di rendere il più intuitivi possibile i diversi task. 
+
+            <div style="display: flex; justify-content: center;">
+                  <img src="assets/prototipi-lf.png" width="400" title="i nostri prototipi low-fidelity"/>
+            </div>
+      </div>
+      <div id="footer">
+            <div id="footer-title" class="paragraph-title"> 
+                  gruppo 
+            </div>
+            <div class="tr-4 contact-row">
+                  <div class="persona-td">
+                        <a href="mailto:luca.papiro@mail.polimi.it" class="persona-wrapper">
+                              <img src="./assets/luca.jpg" class="persona" title="Luca Papiro">
+                        </a>
+                        <div class="creator-name">Luca Papiro</div>
+                  </div>
+                  <div class="persona-td">
+                        <a href="mailto:elisa.garsetti@mail.polimi.it" class="persona-wrapper">
+                              <img src="./assets/elisa.jpg" class="persona" title="Elisa Garsetti">
+                        </a>
+                        <div class="creator-name">Elisa Garsetti</div>
+                  </div>
+                  <div class="persona-td">
+                        <a href="mailto:daniele.crippa@mail.polimi.it" class="persona-wrapper">
+                              <img src="./assets/daniele.jpg" class="persona" title="Daniele Crippa">
+                        </a>
+                        <div class="creator-name">Daniele Crippa</div>
+                  </div>
+                  <div class="persona-td">
+                        <a href="mailto:federico.cocchi@mail.polimi.it" class="persona-wrapper">
+                              <img src="./assets/federico.jpg" class="persona" title="Federico Cocchi">
+                        </a>
+                        <div class="creator-name">Federico Cocchi</div>
+                  </div>
+            </div>
+            <div class="tr-3 contact-row">
+                  <div class="persona-td">
+                        <a href="mailto:lorenzo.carafa@mail.polimi.it" class="persona-wrapper">
+                              <img src="./assets/lorenzo.jpg" class="persona" title="Lorenzo Carafa">
+                        </a>
+                        <div class="creator-name">Lorenzo Carafa</div>
+                  </div>
+                  <div class="persona-td">
+                        <a href="mailto:stefan.calugaru@mail.polimi.it" class="persona-wrapper">
+                              <img src="./assets/stefan.jpg" class="persona" title="Stefan Calugaru">
+                        </a>
+                        <div class="creator-name">Stefan Calugaru</div>
+                  </div>
+                  <div class="persona-td">
+                        <a href="mailto:andreagiovanni.allegretti@mail.polimi.it" class="persona-wrapper">
+                              <img src="./assets/andrea.jpg" class="persona" title="Andrea Allegretti">
+                        </a>
+                        <div class="creator-name">Andrea Allegretti</div>
+                  </div>
+                  <div class="persona-td">
+                  </div>
+            </div>
+      </div>
+      <div id="error-modal">
+            <div id="error" class="tr">
+                  <img src="assets/error.svg" id="err-ico" class="td-wrap" width="60" height="60"/>
+                  <div id="err-msg" class="td">
+                        l'app non è ancora disponibile
+                  </div>
+                  <img src="assets/x.svg" id="err-x" class="td-wrap" width="40" height="40" onclick="hideErrorMsg()"/>
+            </div>
+      </div>
+      <style>
+            body {
+                  overflow-x: hidden;
+            }
+            .paragraph {
+                  padding: 100px;
+            }
+            :root {
+                  --persona-width: 150px;
+            }
+            #logo {
+                  margin-left: calc( 50% - 120px);
+                  margin-top: 300px;
+            }
+            #header-container {
+                  padding-top: 30px;
+                  width: 100%;
+                  height: 800px;
+                  background-color: var(--primary-color);
+                  margin: 0;
+                  min-width: 380px;
+            }
+            #main-title, #slogan {
+                  width: 100%;
+                  text-align: center;
+            }
+            #main-title {
+                  position: relative;
+                  top: 200px;
+                  height: 40px;
+                  font-size: 90px;
+                  /*text-shadow: 4px 2px var(--text-shadow), -3px -2px var(--text-light);*/
+            }
+            #slogan {
+                  height: 20px;
+                  padding-top: 30px;
+                  position: relative;
+            }
+            #buttons {
+                  width: calc( 100% - (100% - 420px)/2);
+                  padding-top: 50px;
+                  margin-left: calc( (100% - 420px)/2 );
+                  position: relative;
+            }
+            #description {
+                  font-style: italic;
+                  padding: 30px;
+                  width: 50%;
+                  margin-top: 50px;
+                  margin-left: calc( (50% - 60px)/2 );
+                  text-align: center;
+            }
+            #assignments {
+                  padding-top: 100px;
+                  text-align: center;
+            }
+            #assignments-title {
+                  margin-bottom: 50px;
+            }
+            #roadmap {
+                  position: absolute;
+                  left: calc( 50% - 50px );
+                  margin-top: 63.5px;
+            }
+            #footer {
+                  height: 1000px;
+                  background-color: var(--primary-color);
+                  padding: 50px;
+            }
+            #footer-title {
+                  padding-top: 50px;
+                  padding-bottom: 50px;
+                  text-align: center;
+            }
+            #error-modal {
+                  display: none;
+                  width: 100%;
+                  min-width: 100vw;
+                  height: 100%;
+                  min-height: 100vh;
+                  background-color: #00000084;
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+            }
+            #error {
+                  width: 80%;
+                  background-color: #df3535dd;
+                  border-radius: 5px;
+                  border: 3px solid #d76d6d;
+                  height: 100px;
+                  position: fixed;
+                  top: calc( (100% - 180px)/2 );
+                  left: 10%;
+            }
+            #err-ico {
+                  margin: 20px 10px;
+            }
+            #err-msg {
+                  text-transform: uppercase;
+                  font-size: 20px;
+                  height: 100px;
+                  justify-content: center;
+                  align-content: center;
+                  width: 70%;
+                  max-width: 70%;
+            }
+            #err-x {
+                  margin-top: 30px;
+            }
+            #err-x:hover {
+                  filter: brightness(60%);
+            }
+            #err-x:active {
+                  filter: brightness(40%);
+            }
+            .special-btn {
+                  background-color: var(--primary-color);
+                  border: 2px solid var(--text);
+            }
+            .card {
+                  font-size: 32px;
+                  height: 200px;
+                  margin-bottom: 100px;
+                  width: 300px;
+                  min-width: 200px;
+                  position: relative;
+                  left: 150px;
+                  background-color: var(--background-secondary);
+                  border-radius: 20px;
+                  text-transform: uppercase;
+                  padding: 40px;
+                  box-sizing: border-box;
+                  display: grid;
+                  grid-template-columns: 200px;
+                  align-content: center;
+                  left: 0;
+            }
+            .tr-4 {
+                  display: grid;
+                  grid-template-columns: repeat( 4, 150px );
+                  gap: 50px;
+            }
+            .tr-3 {
+                  display: grid;
+                  grid-template-columns: repeat( 3, 150px );
+                  gap: 50px;
+            }
+            .story-anchor {
+                  text-align: center;
+                  padding: 0;
+                  margin-left: -5px;
+                  margin-bottom: 20px;
+                  box-sizing: border-box;
+            }
+            .icon-rm {
+                  position: relative;
+                  top: -15px;
+            }
+            .right {
+                  margin-left: calc( 50% + 40px );
+            }
+            .left {
+                  /*margin-left: 10px;*/
+                  position: relative;
+                  left: calc( 50vw - 340px );
+            }
+            .contact-row {
+                  padding-top: 50px;
+                  justify-content: center;
+            }
+            .creator-name {
+                  font-weight: bolder;
+                  font-size: 18px;
+                  margin-left: 15px;
+                  width: 180px;
+            }
+            .persona {
+                  object-fit: cover;
+                  width: var(--persona-width);
+                  min-height: var(--persona-width);
+            }
+            .persona.allign {
+                  margin-top: -20px;
+            }
+            .persona-wrapper {
+                  overflow: hidden;
+                  border-radius: 50%;
+                  width: var(--persona-width);
+                  height: var(--persona-width);
+                  max-width: var(--persona-width);
+                  box-sizing: border-box;
+                  border: 5px solid var(--secondary-color);
+                  display: inline-block;
+            }
+            .persona-wrapper:hover {
+                  filter: brightness(80%);
+                  
+            }
+            @media (max-width: 740px ) {
+                  #roadmap {
+                        left: -10px;
+                  }
+                  .card {
+                        min-width: 200px;
+                        padding: 20px;
+                        position: relative;
+                        left: 80px;
+                        margin-left: 0;
+                  }
+                  .tr-3, .tr-4 {
+                        grid-template-columns: 150px 150px;
+                  }
+                  .contact-row {
+                        gap: 5px;
+                  }
+                  .card {
+                        grid-template-columns: 150px;
+                  }
+                  .card > a {
+                        margin-left: 30px;
+                  }
+                  body {
+                        overflow-x: scroll;
+                  }
+            }
+            @media (max-width: 415px ) {
+                  
+                  #error {
+                        height: 150px;
+                        top: calc( (100% - 230px)/2 );
+                        padding-top: 50px;    
+                  }
+                  #buttons {
+                        width: calc( 100% - (100% - 310px)/2);
+                        margin-left: calc( (100% - 310px)/2 );
+                  }
+                  .long-btn {
+                        font-size: 12px;
+                  }
+            }
+            @media (max-width: 805px ) {
+                  #main-title {
+                        top: -50px;
+                  }
+            }
+      </style>
+      <script type="text/javascript">
+            /**
+             * shows an error
+             * @param {string} msg the message to display
+             */
+            const showErrorMsg = (msg)=>{
+                  console.error(msg);
+                  document.getElementById("err-msg").innerHTML = msg;
+                  document.getElementById("error-modal").style.display = "block";
+            }
+            /**
+             * This function close the modal that was opened with showErrorMsg
+             * @return {void}
+             */
+            const hideErrorMsg = ()=>{
+                  document.getElementById("error-modal").style.display = "none";
+            }
+      </script>
+</body>
+</html>
