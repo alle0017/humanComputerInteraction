@@ -1,0 +1,128 @@
+/**
+* aggiungete i colori che preferite nella root.
+* se avete bisogno di un color picker andate qui 
+* https://www.w3schools.com/colors/colors_picker.asp
+* usate w3school anche per html e css
+*/
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+      --color: ;
+      --text-shadow: #146749;
+      --text-light: #1c935c;
+      --secondary-color: #146749;
+      --text: #1c1c1c;
+      --primary-color: #43c07f;
+      --background: #eaeaea;
+      --background-secondary: #aaaaaa;
+      --font: "Literata", serif;
+      
+}
+
+
+.tr {
+      display: flex;
+}
+
+.td {
+      flex: 1;
+}
+
+.td-wrap {
+      flex: 1;
+      max-width: fit-content;
+      margin-left: 10px;
+}
+
+.title {
+      font-size: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+}
+.paragraph-title {
+      font-size: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 100px;
+}
+.subtitle {
+      font-size: 22px;
+}
+
+.icon {
+      filter: none;
+}
+.center {
+      text-align: center;
+}
+.download-btn {
+      background-color: var(--primary-color);
+      font-size: 24px;
+      text-transform: uppercase;
+      border-radius: 5px;
+      padding: 10px;
+      display: block;
+      text-decoration: none;
+      align-content: center;
+      min-width: 150px;
+      width: 210px;
+      height: 40px;
+      margin-left: -5px;
+}
+* {
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 20px;
+}
+
+body {
+      margin: 0;
+      padding: 0 !important;
+      background-color: var(--background);
+}
+
+button {
+      border: none;
+      background-color: var(--primary-color);
+      font-size: 16px;
+      text-transform: uppercase;
+      width: 200px;
+      max-width: 200px;
+      min-width: 200px;
+      height: 30px;
+      border-radius: 5px;
+
+}
+
+button:hover, .download-btn:hover {
+      filter: brightness(70%);
+}
+
+button:active, .download-btn:active {
+      filter: brightness(30%);
+}
+
+/**
+* qui se l'utente è in dark mode.
+* 🦇
+*/
+@media(prefers-color-scheme: dark ){
+      :root {
+            --text: #dfdfdf;
+            --primary-color: #146749;
+            --secondary-color: #0e3e2c;
+            --background: #2a2a2a;
+            --background-secondary: #323232;
+      }
+      .icon {
+            filter: invert(100%);
+      }
+}
+@media (max-width: 415px ) {
+      button {
+            font-size: 16px;
+            width: 100px;
+            max-width: 100px;
+            min-width: 100px;
+      }
+}
