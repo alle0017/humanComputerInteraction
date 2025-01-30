@@ -8,13 +8,13 @@
 
 :root {
       --color: ;
-      --text-shadow: #146749;
-      --text-light: #1c935c;
-      --secondary-color: #146749;
+      --text-shadow: #5c2a2b;
+      --text-light: #8e5c4f;
+      --secondary-color: #5c2a2b;
       --text: #1c1c1c;
-      --primary-color: #43c07f;
+      --primary-color: #8e5c4f;
       --background: #eaeaea;
-      --background-secondary: #aaaaaa;
+      --background-secondary: #dccec1;
       --font: "Literata", serif;
       
 }
@@ -109,8 +109,8 @@ button:active, .download-btn:active {
 @media(prefers-color-scheme: dark ){
       :root {
             --text: #dfdfdf;
-            --primary-color: #146749;
-            --secondary-color: #0e3e2c;
+            --primary-color: #8e5c4f;
+            --secondary-color: #5c2a2b;
             --background: #2a2a2a;
             --background-secondary: #323232;
       }
