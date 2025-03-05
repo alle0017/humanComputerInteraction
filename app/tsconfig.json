@@ -1,0 +1,14 @@
+{
+    "compileOnSave": false,
+    "extends": "@vue/tsconfig/tsconfig.json",
+    "compilerOptions": {
+        "noEmit": true,
+        "allowJs": true,
+        "checkJs": true,
+        "target": "es2022",
+        "resolveJsonModule": true,
+        "moduleResolution": "Node",
+        "strictNullChecks": false
+    }
+}
+  
